@@ -1,0 +1,108 @@
+﻿@model ProductListViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+<head>
+    <link rel="stylesheet" type="text/css" href="~/css/MyStylecss.css">
+</head>
+@using (Html.BeginForm("Index", "Home", FormMethod.Post))
+{
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="row justify-content-center mt-2">
+                    <div class="col">
+                        <div class="input-group">
+                            @Html.TextBoxFor(s => s.SearchWord, new { @class = "form-control", @placeholder = "დასახელება" })
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-2">
+                    <div class="col">
+                        <div class="input-group">
+                            @Html.DropDownListFor(m => m.ManufacturerID, new SelectList(Model.Manufacturers, "Value", "Text"), "Select Manufacturer", new { @class = "custom-select" })
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-2">
+                    <div class="col-lg-auto pt-lg-1 pr-lg-1">
+                        ფასი:
+                    </div>
+                    <div class="col-lg">
+                        @Html.TextBoxFor(p => p.MinPrice, new { @class = "form-control", @placeholder = "ფასი - დან" })
+                    </div>
+                    <div class="col-lg-auto text-center text-success p-lg-1">-</div>
+                    <div class="col-lg">
+                        @Html.TextBoxFor(p => p.MaxPrice, new { @class = "form-control", @placeholder = "ფასი - მდე" })
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-2 mb-2">
+                    <div class="col-auto">
+                        <input type="submit" class="form-control btn btn-primary" value="ძებნა" />
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md">
+                
+                    @if (Model.Phones.Count() != 0)
+                    {
+                <div class="Divider">
+                    <div class="row1">
+                        @foreach (var item in Model.Phones)
+                        {
+                            <div class="col-sm-3">
+                                <figure class="card card-product">
+                                    <div class="img-wrap">
+                                        <img src="~/images/@item.Image">
+                                    </div>
+                                    <figcaption class="info-wrap">
+                                        <h6 class="title text-dots"><a href="/Home/Details/?id=@item.ID">@item.Name</a></h6>
+                                        <div class="action-wrap">
+                                            <div class="price-wrap h5">
+                                                <span class="price-new">@item.Price.ToString()$</span>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        }
+                    </div>
+                </div>
+                    <div style="display:flex; justify-content: center; margin-top: 30px;">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                <li class="page-item @(Model.Page > 1  ? "active" : "disabled")">
+                                    <button type="submit" class="page-link" name="Page" value="@(Model.Page - 1)">წინა</button>
+                                </li>
+                                @for (int i = 1; i <= @Model.TotalPages; i++)
+                                {
+                                    <li class="page-item @(Model.Page == i ? "disabled" : "active") ">
+                                        <button type="submit" class="page-link" name="Page" value="@i">@i</button>
+                                    </li>
+
+                                }
+                                <li class="page-item  @(Model.Page == Model.TotalPages ? "disabled" : "active")">
+                                    <button type="submit" class="page-link" name="Page" value="@(Model.Page + 1)">შემდეგი</button>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                }
+
+                else
+                {
+                    <div class="row justify-content-center">
+                        <p>ტელეფონი ვერ მოიძებნა</p>
+                    </div>
+
+                }
+
+                </div>
+            </div>
+        </div>
+
+        }
+
