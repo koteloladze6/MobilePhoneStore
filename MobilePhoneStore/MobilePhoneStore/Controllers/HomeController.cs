@@ -10,6 +10,7 @@ using Repository;
 using Domain.Interfaces;
 using Domain;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using MobilePhoneStore.Helpers;
 
 namespace MobilePhoneStore.Controllers
 {
@@ -19,15 +20,19 @@ namespace MobilePhoneStore.Controllers
 
         private IManufacturerRepository _manufacturerRepository { get; set; }
 
-        public HomeController(IPhoneRepository phoneRepository, IManufacturerRepository manufacturerRepository)
+        private Cart _cart;
+
+        public HomeController(IPhoneRepository phoneRepository, IManufacturerRepository manufacturerRepository, Cart cart)
         {
             _phoneRepository = phoneRepository;
             _manufacturerRepository = manufacturerRepository;
+            _cart = cart;
         }
 
         public IActionResult Index(int minPrice, int maxPrice, string searchText = null, int page = 1, int manufacturerID=0)
         {
             int totalpages;
+
             ProductListViewModel model = new ProductListViewModel
             {
                 Phones = GetPhones(minPrice, maxPrice, searchText, 8, page, manufacturerID, out totalpages),
@@ -36,8 +41,10 @@ namespace MobilePhoneStore.Controllers
                 MaxPrice = maxPrice,
                 Page = page,
                 TotalPages = totalpages,
-                Manufacturers=GetManufacturerList()
+                Manufacturers = GetManufacturerList(),
+                CartQuantity = _cart.Items.Sum(q => q.Quantity)
             };
+
             return View(model);
         }
 
@@ -51,7 +58,8 @@ namespace MobilePhoneStore.Controllers
                 searchText = model.SearchWord,
                 Page = model.Page,
                 manufacturerID= model.ManufacturerID,
-                TotalPages = model.TotalPages
+                TotalPages = model.TotalPages,
+                CartQuantity = _cart.Items.Sum(q => q.Quantity)
             });
         }
 

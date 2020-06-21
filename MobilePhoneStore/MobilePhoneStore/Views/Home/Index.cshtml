@@ -5,6 +5,13 @@
 <head>
     <link rel="stylesheet" type="text/css" href="~/css/MyStylecss.css">
 </head>
+<p style="position:absolute; right: 0px; top:0px"> 
+    @Model.CartQuantity 
+    <a href="/Cart/Index">
+        <img src="~/images/Logos/cartLogo.png" width="60" height="60"/>
+    </a>
+</p>
+
 @using (Html.BeginForm("Index", "Home", FormMethod.Post))
 {
     <div class="container-fluid">
@@ -45,31 +52,32 @@
 
 
             <div class="col-md">
-                
-                    @if (Model.Phones.Count() != 0)
-                    {
-                <div class="Divider">
-                    <div class="row1">
-                        @foreach (var item in Model.Phones)
-                        {
-                            <div class="col-sm-3">
-                                <figure class="card card-product">
-                                    <div class="img-wrap">
-                                        <img src="~/images/@item.Image">
-                                    </div>
-                                    <figcaption class="info-wrap">
-                                        <h6 class="title text-dots"><a href="/Home/Details/?id=@item.ID">@item.Name</a></h6>
-                                        <div class="action-wrap">
-                                            <div class="price-wrap h5">
-                                                <span class="price-new">@item.Price.ToString()$</span>
-                                            </div>
+
+                @if (Model.Phones.Count() != 0)
+                {
+                    <div class="Divider">
+                        <div class="row1">
+                            @foreach (var item in Model.Phones)
+                            {
+                                <div class="col-sm-3">
+                                    <figure class="card card-product">
+                                        <div class="img-wrap">
+                                            <img src="~/images/@item.Image">
                                         </div>
-                                    </figcaption>
-                                </figure>
-                            </div>
-                        }
+                                        <figcaption class="info-wrap">
+                                            <h6 class="title text-dots"><a href="/Home/Details/?id=@item.ID">@item.Name</a></h6>
+                                            <div class="action-wrap">
+                                                <div class="price-wrap h5">
+                                                    <span class="price-new">@item.Price.ToString()$</span>
+                                                </div>
+                                                <a class="form-control btn btn-primary" href="/Cart/AddToCart/?productId=@item.ID&returnUrl=@ViewContext.HttpContext.Request.PathAndQuery()">Add To Cart</a>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            }
+                        </div>
                     </div>
-                </div>
                     <div style="display:flex; justify-content: center; margin-top: 30px;">
                         <nav aria-label="Page navigation example">
                             <ul class="pagination">
@@ -100,9 +108,10 @@
 
                 }
 
-                </div>
             </div>
         </div>
+    </div>
 
-        }
+}
+
 

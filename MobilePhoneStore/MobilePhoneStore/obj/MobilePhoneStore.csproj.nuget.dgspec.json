@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\User\\Desktop\\MobilePhoneStore2\\MobilePhoneStore\\MobilePhoneStore\\MobilePhoneStore.csproj": {}
+    "C:\\Users\\User1\\Desktop\\kote\\MobilePhoneStore\\MobilePhoneStore\\MobilePhoneStore\\MobilePhoneStore.csproj": {}
   },
   "projects": {
-    "D:\\User\\Desktop\\MobilePhoneStore2\\MobilePhoneStore\\Domain\\Domain.csproj": {
+    "C:\\Users\\User1\\Desktop\\kote\\MobilePhoneStore\\MobilePhoneStore\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\User\\Desktop\\MobilePhoneStore2\\MobilePhoneStore\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\User1\\Desktop\\kote\\MobilePhoneStore\\MobilePhoneStore\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "D:\\User\\Desktop\\MobilePhoneStore2\\MobilePhoneStore\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\User\\Desktop\\MobilePhoneStore2\\MobilePhoneStore\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\User1\\Desktop\\kote\\MobilePhoneStore\\MobilePhoneStore\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\User1\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User1\\Desktop\\kote\\MobilePhoneStore\\MobilePhoneStore\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User1\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -61,24 +61,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\User\\Desktop\\MobilePhoneStore2\\MobilePhoneStore\\MobilePhoneStore\\MobilePhoneStore.csproj": {
+    "C:\\Users\\User1\\Desktop\\kote\\MobilePhoneStore\\MobilePhoneStore\\MobilePhoneStore\\MobilePhoneStore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\User\\Desktop\\MobilePhoneStore2\\MobilePhoneStore\\MobilePhoneStore\\MobilePhoneStore.csproj",
+        "projectUniqueName": "C:\\Users\\User1\\Desktop\\kote\\MobilePhoneStore\\MobilePhoneStore\\MobilePhoneStore\\MobilePhoneStore.csproj",
         "projectName": "MobilePhoneStore",
-        "projectPath": "D:\\User\\Desktop\\MobilePhoneStore2\\MobilePhoneStore\\MobilePhoneStore\\MobilePhoneStore.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\User\\Desktop\\MobilePhoneStore2\\MobilePhoneStore\\MobilePhoneStore\\obj\\",
+        "projectPath": "C:\\Users\\User1\\Desktop\\kote\\MobilePhoneStore\\MobilePhoneStore\\MobilePhoneStore\\MobilePhoneStore.csproj",
+        "packagesPath": "C:\\Users\\User1\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User1\\Desktop\\kote\\MobilePhoneStore\\MobilePhoneStore\\MobilePhoneStore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User1\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -91,8 +91,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\User\\Desktop\\MobilePhoneStore2\\MobilePhoneStore\\Repository\\Repository.csproj": {
-                "projectPath": "D:\\User\\Desktop\\MobilePhoneStore2\\MobilePhoneStore\\Repository\\Repository.csproj"
+              "C:\\Users\\User1\\Desktop\\kote\\MobilePhoneStore\\MobilePhoneStore\\Repository\\Repository.csproj": {
+                "projectPath": "C:\\Users\\User1\\Desktop\\kote\\MobilePhoneStore\\MobilePhoneStore\\Repository\\Repository.csproj"
               }
             }
           }
@@ -126,7 +126,7 @@
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[3.1.0, )"
+              "version": "[3.1.3, )"
             }
           },
           "imports": [
@@ -147,24 +147,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\User\\Desktop\\MobilePhoneStore2\\MobilePhoneStore\\Repository\\Repository.csproj": {
+    "C:\\Users\\User1\\Desktop\\kote\\MobilePhoneStore\\MobilePhoneStore\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\User\\Desktop\\MobilePhoneStore2\\MobilePhoneStore\\Repository\\Repository.csproj",
+        "projectUniqueName": "C:\\Users\\User1\\Desktop\\kote\\MobilePhoneStore\\MobilePhoneStore\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "D:\\User\\Desktop\\MobilePhoneStore2\\MobilePhoneStore\\Repository\\Repository.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\User\\Desktop\\MobilePhoneStore2\\MobilePhoneStore\\Repository\\obj\\",
+        "projectPath": "C:\\Users\\User1\\Desktop\\kote\\MobilePhoneStore\\MobilePhoneStore\\Repository\\Repository.csproj",
+        "packagesPath": "C:\\Users\\User1\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User1\\Desktop\\kote\\MobilePhoneStore\\MobilePhoneStore\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User1\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -177,8 +177,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\User\\Desktop\\MobilePhoneStore2\\MobilePhoneStore\\Domain\\Domain.csproj": {
-                "projectPath": "D:\\User\\Desktop\\MobilePhoneStore2\\MobilePhoneStore\\Domain\\Domain.csproj"
+              "C:\\Users\\User1\\Desktop\\kote\\MobilePhoneStore\\MobilePhoneStore\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\User1\\Desktop\\kote\\MobilePhoneStore\\MobilePhoneStore\\Domain\\Domain.csproj"
               }
             }
           }
@@ -192,6 +192,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.1.1, )"
@@ -211,6 +215,10 @@
             "Microsoft.Extensions.Configuration.Json": {
               "target": "Package",
               "version": "[3.1.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
             }
           },
           "imports": [
@@ -228,7 +236,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
