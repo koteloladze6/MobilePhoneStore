@@ -11,6 +11,8 @@ using Microsoft.Extensions.Hosting;
 using Repository;
 using Repository.Repositories;
 using Domain.Interfaces;
+using MobilePhoneStore.Models;
+using Microsoft.AspNetCore.Http;
 
 namespace MobilePhoneStore
 {
@@ -28,11 +30,19 @@ namespace MobilePhoneStore
         {
             services.AddScoped<IManufacturerRepository, ManufacturerRepository>();
             services.AddScoped<IPhoneRepository, PhoneRepository>();
+            services.AddScoped<IOrderRepository, OrderRepository>();
+            services.AddScoped<IOrderItemRepository, OrderItemRepository>();
 
             services.AddDbContext<PhoneDbContext>(opts =>
        opts.UseSqlServer(Configuration.GetConnectionString("MobilePhoneStoreDB")));
 
             services.AddControllersWithViews();
+
+            services.AddScoped<Cart>(sp => SessionCart.GetCart(sp));
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
+            services.AddMemoryCache();
+            services.AddSession();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -49,6 +59,8 @@ namespace MobilePhoneStore
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            app.UseSession();
 
             app.UseAuthorization();
 

@@ -50,5 +50,29 @@ namespace MobilePhoneStore.Models
                 Video=p.Video
             };
         }
+
+        //public static explicit operator Phone(PhoneDetailsModel p)
+        //{
+        //    string image = "";
+        //    foreach (var img in p.Images)
+        //    {
+        //        image += "?" + img;
+        //    }
+        //    return new Phone
+        //    {
+        //        ID = p.ID,
+        //        Name = p.Name,
+        //        Dimension = p.Dimension,
+        //        Weight = p.Weight,
+        //        Display = p.Display,
+        //        CPU = p.CPU,
+        //        Memory = p.Memory,
+        //        OS = p.OS,
+        //        Price = p.Price,
+        //        Image = image,
+        //        Manufacturer =
+        //        Video = p.Video
+        //    };
+        //}
     }
 }

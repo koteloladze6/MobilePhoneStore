@@ -52,5 +52,7 @@ namespace Domain
             get => _lazyLoader.Load(this, ref _manufacturer);
             set => _manufacturer = value;
         }
+
+        public virtual ICollection<OrderItem> OrderItems { get; set; }
     }
 }

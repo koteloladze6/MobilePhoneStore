@@ -29,3 +29,11 @@ D:\User\Desktop\MobilePhoneStore2\MobilePhoneStore\Domain\obj\Debug\netcoreapp3.
 D:\User\Desktop\MobilePhoneStore2\MobilePhoneStore\Domain\obj\Debug\netcoreapp3.1\Domain.AssemblyInfo.cs
 D:\User\Desktop\MobilePhoneStore2\MobilePhoneStore\Domain\obj\Debug\netcoreapp3.1\Domain.dll
 D:\User\Desktop\MobilePhoneStore2\MobilePhoneStore\Domain\obj\Debug\netcoreapp3.1\Domain.pdb
+C:\Users\User1\Desktop\kote\MobilePhoneStore\MobilePhoneStore\Domain\bin\Debug\netcoreapp3.1\Domain.deps.json
+C:\Users\User1\Desktop\kote\MobilePhoneStore\MobilePhoneStore\Domain\bin\Debug\netcoreapp3.1\Domain.dll
+C:\Users\User1\Desktop\kote\MobilePhoneStore\MobilePhoneStore\Domain\bin\Debug\netcoreapp3.1\Domain.pdb
+C:\Users\User1\Desktop\kote\MobilePhoneStore\MobilePhoneStore\Domain\obj\Debug\netcoreapp3.1\Domain.csprojAssemblyReference.cache
+C:\Users\User1\Desktop\kote\MobilePhoneStore\MobilePhoneStore\Domain\obj\Debug\netcoreapp3.1\Domain.AssemblyInfoInputs.cache
+C:\Users\User1\Desktop\kote\MobilePhoneStore\MobilePhoneStore\Domain\obj\Debug\netcoreapp3.1\Domain.AssemblyInfo.cs
+C:\Users\User1\Desktop\kote\MobilePhoneStore\MobilePhoneStore\Domain\obj\Debug\netcoreapp3.1\Domain.dll
+C:\Users\User1\Desktop\kote\MobilePhoneStore\MobilePhoneStore\Domain\obj\Debug\netcoreapp3.1\Domain.pdb

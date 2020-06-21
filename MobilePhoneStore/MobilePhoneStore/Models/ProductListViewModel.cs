@@ -26,5 +26,7 @@ namespace MobilePhoneStore.Models
         public int PageSize { get; set; }
 
         public int TotalPages { get; set; }
+
+        public int CartQuantity { get; set; }
     }
 }
